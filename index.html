@@ -33,7 +33,7 @@
             <h1>Defesa jurídica estratégica em Direito do Trabalho, INSS e Família.</h1>
             <p>Atendimento presencial em Igarassu e 100% digital para clientes em todo o Brasil, unindo agilidade, transparência e excelência técnica.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/5581989393141?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20orientação%20jurídica." target="_blank" class="btn-primary">Atendimento via WhatsApp</a>
+                <a href="https://wa.me/5581989393149?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20orientação%20jurídica." target="_blank" class="btn-primary">Atendimento via WhatsApp</a>
                 <a href="#areas" class="btn-secondary">Conhecer Áreas</a>
             </div>
         </div>
@@ -103,21 +103,28 @@
                 <ul>
                     <li><strong>Sede:</strong> Igarassu – Pernambuco (Atendimento em +15 estados)</li>
                     <li><strong>Registros:</strong> OAB/PE 56.303 | OAB/PE 67.790</li>
-                    <li><strong>WhatsApp:</strong> (81) 98939-3141</li>
+                    <li><strong>WhatsApp:</strong> (81) 98939-3149</li>
                     <li><strong>E-mail:</strong> vitorsantoss@gmail.com</li>
                 </ul>
             </div>
-            <form class="contato-form">
-                <input type="text" placeholder="Seu Nome Completo" required>
-                <input type="tel" placeholder="Seu WhatsApp com DDD" required>
-                <select required>
+
+            <!-- Formulário conectado ao e-mail via FormSubmit -->
+            <form class="contato-form" action="https://formsubmit.co/vitorsantoss@gmail.com" method="POST">
+                <!-- Configurações ocultas do formulário -->
+                <input type="hidden" name="_subject" value="Novo contato pelo site - Vieira & Santos Advogados">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="text" name="Nome" placeholder="Seu Nome Completo" required>
+                <input type="tel" name="WhatsApp" placeholder="Seu WhatsApp com DDD" required>
+                <select name="Area_Juridica" required>
                     <option value="" disabled selected>Selecione a Área do seu Caso</option>
-                    <option value="Trabalho">Direito do Trabalho</option>
-                    <option value="INSS">Direito Previdenciário (INSS)</option>
-                    <option value="Familia">Direito de Família</option>
-                    <option value="Outro">Outro Assunto</option>
+                    <option value="Direito do Trabalho">Direito do Trabalho</option>
+                    <option value="Direito Previdenciário (INSS)">Direito Previdenciário (INSS)</option>
+                    <option value="Direito de Família">Direito de Família</option>
+                    <option value="Outro Assunto">Outro Assunto</option>
                 </select>
-                <textarea rows="4" placeholder="Conte brevemente o que aconteceu..." required></textarea>
+                <textarea name="Resumo_do_Caso" rows="4" placeholder="Conte brevemente o que aconteceu..." required></textarea>
                 <button type="submit" class="btn-primary">Solicitar Atendimento</button>
             </form>
         </div>
@@ -133,7 +140,7 @@
     </footer>
 
     <!-- Botão Flutuante do WhatsApp -->
-    <a href="https://wa.me/5581989393141?text=Olá,%20gostaria%20de%20falar%20com%20um%20advogado%20da%20Vieira%20%26%20Santos." target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
+    <a href="https://wa.me/5581989393149?text=Olá,%20gostaria%20de%20falar%20com%20um%20advogado%20da%20Vieira%20%26%20Santos." target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
         WhatsApp
     </a>
 
